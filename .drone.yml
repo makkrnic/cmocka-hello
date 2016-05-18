@@ -1,0 +1,9 @@
+build:
+  image: mkrnic/sartura-drone-test-builder:latest
+  commands:
+    - cd /opt
+    - git clone https://github.com/makkrnic/cmocka-hello.git cmocka-hello
+    - cd cmocka-hello/build
+    - cmake ../
+    - make
+    - ../tests/bin/almost-calc-sum
