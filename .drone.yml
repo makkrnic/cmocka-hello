@@ -4,3 +4,5 @@ pipeline:
     commands:
       - cd build
       - cmake ../
+      - make
+      - ../tests/bin/almost-calc-sum
