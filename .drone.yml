@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: mkrnic/sartura-drone-test-builder:latest
+    image: mkrnic/sartura-drone-test-builder:arch01
     commands:
       - cd build
       - cmake ../
